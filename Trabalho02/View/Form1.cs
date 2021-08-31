@@ -18,12 +18,6 @@ namespace Trabalho02
 
 
         }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            GeraLetra();
-        }
-
         private void Form1_Load(object sender, EventArgs e)
         {
             GeraLetra();
@@ -46,6 +40,17 @@ namespace Trabalho02
             lblc2.Text = Control.Control.ListaGerada()[7];
             lblc3.Text = Control.Control.ListaGerada()[8];
 
+        }
+        //Função do botão 'Gerar Novamente'
+        private void btnGerarNovamente_Click(object sender, EventArgs e)
+        {
+            GeraLetra();
+
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            //condição
         }
     }
 }

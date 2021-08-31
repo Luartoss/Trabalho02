@@ -12,6 +12,8 @@ namespace Trabalho02.Control
     class Control
 
     {
+        
+        
         public static List<string> ListaGerada()
         {
             List<string> lista = new List<string>();

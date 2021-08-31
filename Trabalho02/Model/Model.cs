@@ -10,7 +10,7 @@ namespace Trabalho02.Model
     {
         public static Model modelo = new Model();
 
-
+        //Funções de cada Label
         public static string A1()
         {
 

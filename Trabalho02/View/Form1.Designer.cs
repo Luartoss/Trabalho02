@@ -42,7 +42,7 @@ namespace Trabalho02
             this.lbla3 = new System.Windows.Forms.Label();
             this.lbla2 = new System.Windows.Forms.Label();
             this.btnGerarNovamente = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbla1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -50,7 +50,7 @@ namespace Trabalho02
             // lblValorPonto
             // 
             this.lblValorPonto.AutoSize = true;
-            this.lblValorPonto.Location = new System.Drawing.Point(684, 50);
+            this.lblValorPonto.Location = new System.Drawing.Point(640, 80);
             this.lblValorPonto.Name = "lblValorPonto";
             this.lblValorPonto.Size = new System.Drawing.Size(36, 39);
             this.lblValorPonto.TabIndex = 29;
@@ -73,6 +73,7 @@ namespace Trabalho02
             this.btnBuscar.TabIndex = 27;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // txtPalavra
             // 
@@ -161,15 +162,16 @@ namespace Trabalho02
             this.btnGerarNovamente.TabIndex = 17;
             this.btnGerarNovamente.Text = "Gerar Novamente";
             this.btnGerarNovamente.UseVisualStyleBackColor = true;
+            this.btnGerarNovamente.Click += new System.EventHandler(this.btnGerarNovamente_Click);
             // 
-            // label1
+            // lbla1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(109, 105);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(38, 39);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Z";
+            this.lbla1.AutoSize = true;
+            this.lbla1.Location = new System.Drawing.Point(109, 105);
+            this.lbla1.Name = "lbla1";
+            this.lbla1.Size = new System.Drawing.Size(38, 39);
+            this.lbla1.TabIndex = 16;
+            this.lbla1.Text = "Z";
             // 
             // pictureBox2
             // 
@@ -199,7 +201,7 @@ namespace Trabalho02
             this.Controls.Add(this.lbla3);
             this.Controls.Add(this.lbla2);
             this.Controls.Add(this.btnGerarNovamente);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbla1);
             this.Controls.Add(this.pictureBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(10, 9, 10, 9);
@@ -226,7 +228,7 @@ namespace Trabalho02
         private System.Windows.Forms.Label lbla3;
         private System.Windows.Forms.Label lbla2;
         private System.Windows.Forms.Button btnGerarNovamente;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbla1;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
