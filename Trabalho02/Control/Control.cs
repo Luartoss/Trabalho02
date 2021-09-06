@@ -12,35 +12,72 @@ namespace Trabalho02.Control
     class Control
 
     {
-        
-        
-        public static List<string> ListaGerada()
+        public static List<string> ListaTexto(string texto)
         {
             List<string> lista = new List<string>();
-            lista.Add(Model.Model.A1());
-
-            lista.Add(Model.Model.A2());
-
-            lista.Add(Model.Model.A3());
-
-            lista.Add(Model.Model.B1());
-
-            lista.Add(Model.Model.B2());
-
-            lista.Add(Model.Model.B3());
-
-            lista.Add(Model.Model.C1());
-
-            lista.Add(Model.Model.C2());
-
-            lista.Add(Model.Model.C3());
-
+            foreach (var item in texto)
+            {
+                lista.Add(item.ToString());
+            }
             return lista;
-
-
         }
 
 
+        //Index de posição na matriz
+        public static int inI(string[][] matriz, List<string> lista)
+        {
+            int posicao = -1;
+ 
+
+            for (int i = 0; i < matriz.Length; i++)
+            {
+                for (int j = 0; j < matriz[i].Length; j++)
+                {
+                    if (lista[i] == matriz[i][j])
+                    {
+                        posicao = i;
+                   
+                        return posicao;
+                    }
+                }
+            }
+
+            return posicao;
+        }
+        public static int inJ(string[][] matriz, List<string> lista)
+        {
+            int posicao = -1;
+
+
+            for (int i = 0; i < matriz.Length; i++)
+            {
+                for (int j = 0; j < matriz[i].Length; j++)
+                {
+                    if (lista[i] == matriz[i][j])
+                    {
+                        posicao = j;
+
+                        return posicao;
+                    }
+                }
+            }
+
+            return posicao;
+        }
+        public static int Verifica(List<string> lista, string[][] matriz)
+        {
+            int pontos = 0;
+
+            for (int i = 0; i < matriz.Length; i++)
+            {
+                for (int j = 0; j < matriz[i].Length; j++)
+                {
+                   
+                }
+            }
+
+            return pontos;
+        }
 
     }
 }

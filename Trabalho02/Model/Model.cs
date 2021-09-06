@@ -11,6 +11,28 @@ namespace Trabalho02.Model
         public static Model modelo = new Model();
 
         //Funções de cada Label
+
+        public static string[][] GeraMatriz()
+        {
+            string[][] matriz = new string[3][];
+
+            for (int i = 0; i < matriz.Length; i++)
+            {
+                matriz[i] = new string[3];
+            }
+
+            matriz[0][0] = Model.A1();
+            matriz[0][1] = Model.A2();
+            matriz[0][2] = Model.A3();
+            matriz[1][0] = Model.B1();
+            matriz[1][1] = Model.B2();
+            matriz[1][2] = Model.B3();
+            matriz[2][0] = Model.C1();
+            matriz[2][1] = Model.C2();
+            matriz[2][2] = Model.C3();
+
+            return matriz;
+        }
         public static string A1()
         {
 
@@ -117,9 +139,7 @@ namespace Trabalho02.Model
             return gerador;
         }
 
-
-
-
+        
 
 
 

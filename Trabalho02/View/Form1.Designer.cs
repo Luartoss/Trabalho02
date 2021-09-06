@@ -153,6 +153,7 @@ namespace Trabalho02
             this.lbla2.Size = new System.Drawing.Size(38, 39);
             this.lbla2.TabIndex = 18;
             this.lbla2.Text = "Z";
+            this.lbla2.Click += new System.EventHandler(this.lbla2_Click);
             // 
             // btnGerarNovamente
             // 

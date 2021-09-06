@@ -20,37 +20,47 @@ namespace Trabalho02
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            GeraLetra();
-
+            MostraLetra();
+           
+        
 
         }
 
         //Função que gera as letras
-        private void GeraLetra()
+        private string[][] MostraLetra()
         {
-            lbla1.Text = Control.Control.ListaGerada()[0];
-            lbla2.Text = Control.Control.ListaGerada()[1];
-            lbla3.Text = Control.Control.ListaGerada()[2];
+            string[][] matriz = Model.Model.GeraMatriz();
 
-            lblb1.Text = Control.Control.ListaGerada()[3];
-            lblb2.Text = Control.Control.ListaGerada()[4];
-            lblb3.Text = Control.Control.ListaGerada()[5];
+            lbla1.Text = matriz[0][0];
+            lbla2.Text = matriz[0][1];
+            lbla3.Text = matriz[0][2];
+                       
+            lblb1.Text = matriz[1][0];
+            lblb2.Text = matriz[1][1];
+            lblb3.Text = matriz[1][2];
+                   
+            lblc1.Text = matriz[2][0];
+            lblc2.Text = matriz[2][1];
+            lblc3.Text = matriz[2][2];
 
-            lblc1.Text = Control.Control.ListaGerada()[6];
-            lblc2.Text = Control.Control.ListaGerada()[7];
-            lblc3.Text = Control.Control.ListaGerada()[8];
-
+            return matriz;
         }
         //Função do botão 'Gerar Novamente'
         private void btnGerarNovamente_Click(object sender, EventArgs e)
         {
-            GeraLetra();
+            MostraLetra();
 
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            //condição
+            
+            Control.Control.Verifica(Control.Control.ListaTexto(txtPalavra.Text), MostraLetra());
+        }
+
+        private void lbla2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,3 +18,13 @@ C:\Users\luiza.machado1\Documents\GitHub\Trabalho02\Trabalho02\obj\Debug\Trabalh
 C:\Users\luiza.machado1\Documents\GitHub\Trabalho02\Trabalho02\bin\Debug\Trabalho02.exe.config
 C:\Users\luiza.machado1\Documents\GitHub\Trabalho02\Trabalho02\bin\Debug\Trabalho02.exe
 C:\Users\luiza.machado1\Documents\GitHub\Trabalho02\Trabalho02\bin\Debug\Trabalho02.pdb
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\bin\Debug\Trabalho02.exe.config
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\bin\Debug\Trabalho02.exe
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\bin\Debug\Trabalho02.pdb
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.csprojAssemblyReference.cache
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.Form1.resources
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.Properties.Resources.resources
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.csproj.GenerateResource.cache
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.csproj.CoreCompileInputs.cache
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.exe
+C:\Users\arthur.silva6\Source\Repos\Trabalho02\Trabalho02\obj\Debug\Trabalho02.pdb
