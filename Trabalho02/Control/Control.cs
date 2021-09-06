@@ -24,55 +24,16 @@ namespace Trabalho02.Control
 
 
         //Index de posição na matriz
-        public static int inI(string[][] matriz, List<string> lista)
-        {
-            int posicao = -1;
- 
 
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                for (int j = 0; j < matriz[i].Length; j++)
-                {
-                    if (lista[i] == matriz[i][j])
-                    {
-                        posicao = i;
-                   
-                        return posicao;
-                    }
-                }
-            }
-
-            return posicao;
-        }
-        public static int inJ(string[][] matriz, List<string> lista)
-        {
-            int posicao = -1;
-
-
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                for (int j = 0; j < matriz[i].Length; j++)
-                {
-                    if (lista[i] == matriz[i][j])
-                    {
-                        posicao = j;
-
-                        return posicao;
-                    }
-                }
-            }
-
-            return posicao;
-        }
         public static int Verifica(List<string> lista, string[][] matriz)
         {
             int pontos = 0;
 
-            for (int i = 0; i < matriz.Length; i++)
+            for (int i = 0; i < lista.Count; i++)
             {
-                for (int j = 0; j < matriz[i].Length; j++)
+                for (int j = i; j < lista[i].Length; j++)
                 {
-                   
+                    
                 }
             }
 
