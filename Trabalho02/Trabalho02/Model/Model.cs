@@ -7,18 +7,17 @@ using System.Threading.Tasks;
 namespace Trabalho02.Model
 {
     public class Model
-    {
-        public static Model modelo = new Model();
+    { 
 
         //Funções de cada Label
 
-        public static string[][] GeraMatriz()
+        public static Celula[][] GeraMatriz()
         {
-            string[][] matriz = new string[3][];
+            Celula[][] matriz = new Celula[3][];
 
             for (int i = 0; i < matriz.Length; i++)
             {
-                matriz[i] = new string[3];
+                matriz[i] = new Celula[3];
             }
 
             matriz[0][0] = Model.A1();
@@ -33,8 +32,9 @@ namespace Trabalho02.Model
 
             return matriz;
         }
-        public static string A1()
+        public static Celula A1()
         {
+            Celula celula = new Celula();
 
             List<string> A1 = new List<string>();
             Random ran = new Random();
@@ -42,57 +42,81 @@ namespace Trabalho02.Model
             A1.Add("D");
             string gerador = A1[ran.Next(0, A1.Count)];
 
-            return gerador;
-        }
-        public static string A2()
-        {
+            celula.letra = gerador;
+            celula.linha = 1;
+            celula.coluna = 1;
 
+            return celula;
+        }
+        public static Celula A2()
+        {
+            Celula celula = new Celula();
             List<string> A2 = new List<string>();
             Random ran = new Random();
+
             A2.Add("E");
             A2.Add("F");
             string gerador = A2[ran.Next(0, A2.Count)];
 
-            return gerador;
-        }
-        public static string A3()
-        {
+            celula.letra = gerador;
+            celula.linha = 1;
+            celula.coluna = 2;
 
+            return celula;
+        }
+        public static Celula A3()
+        {
+            Celula celula = new Celula();
             List<string> A3 = new List<string>();
             Random ran = new Random();
+
             A3.Add("B");
             A3.Add("C");
             string gerador = A3[ran.Next(0, A3.Count)];
 
-            return gerador;
-        }
-        public static string B1()
-        {
+            celula.letra = gerador;
+            celula.linha = 1;
+            celula.coluna = 3;
 
+            return celula;
+        }
+        public static Celula B1()
+        {
+            Celula celula = new Celula();
             List<string> B1 = new List<string>();
             Random ran = new Random();
+
             B1.Add("G");
             B1.Add("I");
             B1.Add("U");
             string gerador = B1[ran.Next(0, B1.Count)];
 
-            return gerador;
-        }
-        public static string B2()
-        {
+            celula.letra = gerador;
+            celula.linha = 2;
+            celula.coluna = 1;
 
+            return celula;
+        }
+        public static Celula B2()
+        {
+            Celula celula = new Celula();
             List<string> B2 = new List<string>();
             Random ran = new Random();
             B2.Add("H");
             B2.Add("J");
             B2.Add("V");
+
             string gerador = B2[ran.Next(0, B2.Count)];
 
-            return gerador;
-        }
-        public static string B3()
-        {
+            celula.letra = gerador;
+            celula.linha = 2;
+            celula.coluna = 2;
 
+            return celula;
+        }
+        public static Celula B3()
+        {
+            Celula celula = new Celula();
             List<string> B3 = new List<string>();
             Random ran = new Random();
             B3.Add("K");
@@ -100,47 +124,63 @@ namespace Trabalho02.Model
 
             string gerador = B3[ran.Next(0, B3.Count)];
 
-            return gerador;
-        }
-        public static string C1()
-        {
+            celula.letra = gerador;
+            celula.linha = 2;
+            celula.coluna = 3;
 
+            return celula;
+        }
+        public static Celula C1()
+        {
+            Celula celula = new Celula();
             List<string> C1 = new List<string>();
             Random ran = new Random();
+
             C1.Add("M");
             C1.Add("O");
             C1.Add("Q");
             string gerador = C1[ran.Next(0, C1.Count)];
 
-            return gerador;
-        }
-        public static string C2()
-        {
+            celula.letra = gerador;
+            celula.linha = 3;
+            celula.coluna = 1;
 
+            return celula;
+        }
+        public static Celula C2()
+        {
+            Celula celula = new Celula();
             List<string> C2 = new List<string>();
             Random ran = new Random();
+
             C2.Add("N");
             C2.Add("T");
             C2.Add("P");
             string gerador = C2[ran.Next(0, C2.Count)];
 
-            return gerador;
-        }
-        public static string C3()
-        {
+            celula.letra = gerador;
+            celula.linha = 3;
+            celula.coluna = 2;
 
+            return celula;
+        }
+        public static Celula C3()
+        {
+            Celula celula = new Celula();
             List<string> C3 = new List<string>();
             Random ran = new Random();
+
             C3.Add("R");
             C3.Add("S");
             C3.Add("Z");
             string gerador = C3[ran.Next(0, C3.Count)];
 
-            return gerador;
+            celula.letra = gerador;
+            celula.linha = 3;
+            celula.coluna = 3;
+
+            return celula;
         }
-
-        
-
 
 
     }

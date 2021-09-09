@@ -50,7 +50,7 @@ namespace Trabalho02
             // lblValorPonto
             // 
             this.lblValorPonto.AutoSize = true;
-            this.lblValorPonto.Location = new System.Drawing.Point(640, 80);
+            this.lblValorPonto.Location = new System.Drawing.Point(684, 80);
             this.lblValorPonto.Name = "lblValorPonto";
             this.lblValorPonto.Size = new System.Drawing.Size(36, 39);
             this.lblValorPonto.TabIndex = 29;
