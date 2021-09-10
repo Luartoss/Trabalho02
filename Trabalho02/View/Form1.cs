@@ -33,7 +33,6 @@ namespace Trabalho02
         //Função que gera as letras
         private string[][] MostraLetra()
         {
-            //string[][] matriz = Model.Model.GeraMatriz();
 
             lbla1.Text = matriz[0][0];
             lbla2.Text = matriz[0][1];
@@ -49,7 +48,6 @@ namespace Trabalho02
 
             return matriz;
         }
-        //Função do botão 'Gerar Novamente'
         private void btnGerarNovamente_Click(object sender, EventArgs e)
         {
             MostraLetra();
@@ -59,13 +57,14 @@ namespace Trabalho02
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             bool encontrou = true;
-            string letra = txtPalavra.Text.ToUpper();
+            string letra = txtPalavra.Text;
             int i;
             int j;
             int posicaoletra = 0;
-            char qnomeqdouaqui = ' ';
-            qnomeqdouaqui = Control.Control.Separa(letra, posicaoletra);
-            bool verifica = Control.Control.LocalizaPosicao(qnomeqdouaqui, matriz, out i, out j);
+            char separacao = ' ';
+            separacao = Control.Control.Separa(letra, posicaoletra);
+            bool verifica = Control.Control.LocalizaPosicao(separacao, matriz, out i, out j);
+
 
             if (verifica)
             {
@@ -73,13 +72,19 @@ namespace Trabalho02
                 {
 
                     posicaoletra++;
-                    qnomeqdouaqui = Control.Control.Separa(letra, posicaoletra);
-                    encontrou = Control.Control.Verifica(i, j, qnomeqdouaqui, matriz, out i, out j);
-                    //cerebro
+                    separacao = Control.Control.Separa(letra, posicaoletra);
+                    encontrou = Control.Control.Verifica(i, j, separacao, matriz, out i, out j);
 
+                    int pontos;
+
+                    pontos = +1;
+
+                    int somatoria;
+
+                    somatoria = pontos;
+
+                    lblValorPonto.Text = somatoria.ToString();
                 }
-
-
 
             }
             else
@@ -87,12 +92,9 @@ namespace Trabalho02
                 MessageBox.Show("ERROUUUU");
             }
 
-            //Control.Control.Verifica(Control.Control.ListaTexto(txtPalavra.Text), MostraLetra());
         }
+      
 
-        private void lbla2_Click(object sender, EventArgs e)
-        {
 
-        }
     }
 }

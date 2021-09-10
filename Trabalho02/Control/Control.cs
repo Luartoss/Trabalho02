@@ -23,30 +23,13 @@ namespace Trabalho02.Control
         }
 
 
-        //Index de posição na matriz
-
-        //public static int Verifica(List<string> lista, string[][] matriz)
-        //{
-        //    int pontos = 0;
-
-        //    for (int i = 0; i < lista.Count; i++)
-        //    {
-        //        for (int j = i; j < lista[i].Length; j++)
-        //        {
-
-        //        }
-        //    }
-
-        //    return pontos;
-        //}
-
         public static bool Verifica(int linha, int coluna, char letra, string[][] matriz, out int i, out int j)
         {
             bool encontrou = false;
             i = linha;
             j = coluna;
 
-            while (true)
+            while (encontrou)
             {
 
                 i = DiminuiLinha(linha);
@@ -133,7 +116,7 @@ namespace Trabalho02.Control
 
 
         }
-        public static int DiminuiLinha(int i/*, int j, string letra*/)
+        public static int DiminuiLinha(int i)
         {
             if (i > 0)
             {
@@ -141,7 +124,7 @@ namespace Trabalho02.Control
             }
             return i;
         }
-        public static int AcrescentaLinha(int i/*, int j, string letra*/)
+        public static int AcrescentaLinha(int i)
         {
             if (i < 2)
             {
@@ -150,7 +133,7 @@ namespace Trabalho02.Control
             return i;
 
         }
-        public static int DiminuiColuna(/*int i, */int j/*, string letra*/)
+        public static int DiminuiColuna(int j)
         {
             if (j > 0)
             {
@@ -159,7 +142,7 @@ namespace Trabalho02.Control
             return j;
 
         }
-        public static int AcrescentaColuna(/*int i, */int j/*, string letra*/)
+        public static int AcrescentaColuna(int j)
         {
             if (j < 2)
             {
@@ -183,17 +166,17 @@ namespace Trabalho02.Control
         }
         public static char Separa(string letra, int posicaoletra)
         {
-            char nomeaidele = ' ';
+            char caractere = ' ';
 
-            nomeaidele = Convert.ToChar(letra[posicaoletra]);
+            caractere = Convert.ToChar(letra[posicaoletra]);
 
-            return nomeaidele;
+            return caractere;
 
 
         }
-        public static bool LocalizaPosicao(char nomeqcesquiserem, string[][] matriz, out int i, out int j)
+        public static bool LocalizaPosicao(char comparacao, string[][] matriz, out int i, out int j)
         {
-            bool deucertosera = false;
+            bool conferencia = false;
             i = 0;
             j = 0;
 
@@ -201,9 +184,9 @@ namespace Trabalho02.Control
             {
                 for (int l = 0; l < matriz[k].Length; l++)
                 {
-                    if (Convert.ToChar(matriz[k][l]) == nomeqcesquiserem)
+                    if (Convert.ToChar(matriz[k][l]) == comparacao)
                     {
-                        deucertosera = true;
+                        conferencia = true;
                         i = k;
                         j = l;
 
@@ -215,7 +198,7 @@ namespace Trabalho02.Control
                 }
             }
 
-            return deucertosera;
+            return conferencia;
 
 
 
