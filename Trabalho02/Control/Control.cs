@@ -12,6 +12,10 @@ namespace Trabalho02.Control
     class Control
 
     {
+        public static string[][] GeraMatriz(string[][] matriz)
+        {
+            return matriz = Model.Model.GeraMatriz();
+        }
         public static List<string> ListaTexto(string texto)
         {
             List<string> lista = new List<string>();
@@ -22,14 +26,40 @@ namespace Trabalho02.Control
             return lista;
         }
 
+        public static bool conferePalavra(List<string> palavras, string letra)
+        {
+            bool palavraRepetida = false;
+            foreach (var item in palavras)
+            {
+                if (item == letra)
+                {
+                    palavraRepetida = true;
+                    break;
+                }
+            }
+            return palavraRepetida;
+        }
+        public static bool confereLetra(List<char> charr, char separacao)
+        {
+            bool letraRepetida = false;
 
+            foreach (var item in charr)
+            {
+                if (item == separacao)
+                {
+                    letraRepetida = true;
+                    break;
+                }
+            }
+            return letraRepetida;
+        }
         public static bool Verifica(int linha, int coluna, char letra, string[][] matriz, out int i, out int j)
         {
             bool encontrou = false;
             i = linha;
             j = coluna;
 
-            while (encontrou)
+            while (true)
             {
 
                 i = DiminuiLinha(linha);
@@ -42,7 +72,8 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 i = DiminuiLinha(linha);
 
 
@@ -52,7 +83,8 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 i = DiminuiLinha(linha);
                 j = AcrescentaColuna(coluna);
 
@@ -62,7 +94,8 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 j = DiminuiColuna(coluna);
 
                 encontrou = Execute(i, j, letra, matriz);
@@ -71,7 +104,8 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 j = AcrescentaColuna(coluna);
 
                 encontrou = Execute(i, j, letra, matriz);
@@ -80,7 +114,8 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 i = AcrescentaLinha(linha);
                 j = DiminuiColuna(coluna);
 
@@ -90,7 +125,8 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 i = AcrescentaLinha(linha);
 
                 encontrou = Execute(i, j, letra, matriz);
@@ -99,16 +135,14 @@ namespace Trabalho02.Control
                 {
                     break;
                 }
-
+                i = linha;
+                j = coluna;
                 i = AcrescentaLinha(linha);
                 j = AcrescentaColuna(coluna);
 
                 encontrou = Execute(i, j, letra, matriz);
 
-                if (encontrou)
-                {
-                    break;
-                }
+
                 break;
             }
             return encontrou;
@@ -168,8 +202,17 @@ namespace Trabalho02.Control
         {
             char caractere = ' ';
 
-            caractere = Convert.ToChar(letra[posicaoletra]);
+            if (posicaoletra >= letra.Length)
+            {
 
+
+            }
+            else
+            {
+
+                caractere = Convert.ToChar(letra[posicaoletra]);
+
+            }
             return caractere;
 
 

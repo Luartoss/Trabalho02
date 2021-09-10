@@ -12,10 +12,15 @@ namespace Trabalho02
 {
     public partial class Form1 : Form
     {
-
+        int somatoria;
+        List<string> palavras = new List<string>();
+        List<char> charr = new List<char>();
         string[][] matriz = Model.Model.GeraMatriz();
 
-
+        private void GeraMatriz()
+        {
+            matriz = Control.Control.GeraMatriz(matriz);
+        }
         public Form1()
         {
             InitializeComponent();
@@ -50,50 +55,74 @@ namespace Trabalho02
         }
         private void btnGerarNovamente_Click(object sender, EventArgs e)
         {
+            GeraMatriz();
             MostraLetra();
-
+            txtPalavra.Clear();
         }
-
+        string letra = "";
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            letra = txtPalavra.Text.ToUpper();
             bool encontrou = true;
-            string letra = txtPalavra.Text;
+            int pontos = 0;
             int i;
             int j;
             int posicaoletra = 0;
             char separacao = ' ';
-            separacao = Control.Control.Separa(letra, posicaoletra);
-            bool verifica = Control.Control.LocalizaPosicao(separacao, matriz, out i, out j);
-
-
-            if (verifica)
+            if (conferePalavra())
             {
-                while (encontrou)
-                {
-
-                    posicaoletra++;
-                    separacao = Control.Control.Separa(letra, posicaoletra);
-                    encontrou = Control.Control.Verifica(i, j, separacao, matriz, out i, out j);
-
-                    int pontos;
-
-                    pontos = +1;
-
-                    int somatoria;
-
-                    somatoria = pontos;
-
-                    lblValorPonto.Text = somatoria.ToString();
-                }
-
+                MessageBox.Show("Palavra Repetida");
             }
             else
             {
-                MessageBox.Show("ERROUUUU");
-            }
 
+                separacao = Control.Control.Separa(letra, posicaoletra);
+                bool verifica = Control.Control.LocalizaPosicao(separacao, matriz, out i, out j);
+
+
+                if (verifica)
+                {
+                    pontos = 1;
+
+                    while (encontrou)
+                    {
+
+
+                        charr.Add(separacao);
+                        posicaoletra++;
+                        separacao = Control.Control.Separa(letra, posicaoletra);
+                        if (separacao == ' ')
+                        {
+                            break;
+                        }
+                        encontrou = Control.Control.Verifica(i, j, separacao, matriz, out i, out j);
+
+
+                        if (encontrou)
+                        {
+                            pontos++;
+
+                        }
+
+
+                    }
+                    somatoria = somatoria + pontos / 2;
+                    lblValorPonto.Text = somatoria.ToString();
+                    palavras.Add(letra);
+
+                }
+                else
+                {
+                    MessageBox.Show("ERROUUUU");
+                }
+
+            }
         }
-      
+        private bool conferePalavra()
+        {
+            bool palavraRepetida = false;
+            return palavraRepetida = Control.Control.conferePalavra(palavras, letra);
+        }
 
 
     }
