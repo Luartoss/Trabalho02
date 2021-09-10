@@ -58,3 +58,13 @@ C:\Users\Raque\Source\Repos\TrabalhoFINAL\Trabalho02\obj\Debug\Trabalho02.csproj
 C:\Users\Raque\Source\Repos\TrabalhoFINAL\Trabalho02\obj\Debug\Trabalho02.csproj.CoreCompileInputs.cache
 C:\Users\Raque\Source\Repos\TrabalhoFINAL\Trabalho02\obj\Debug\Trabalho02.exe
 C:\Users\Raque\Source\Repos\TrabalhoFINAL\Trabalho02\obj\Debug\Trabalho02.pdb
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\bin\Debug\Trabalho02.exe.config
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\bin\Debug\Trabalho02.exe
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\bin\Debug\Trabalho02.pdb
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.csproj.AssemblyReference.cache
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.Form1.resources
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.Properties.Resources.resources
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.csproj.GenerateResource.cache
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.csproj.CoreCompileInputs.cache
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.exe
+C:\Users\Raque\source\repos\Trabalho0\Trabalho02\obj\Debug\Trabalho02.pdb

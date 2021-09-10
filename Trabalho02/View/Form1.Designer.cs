@@ -1,5 +1,4 @@
-﻿
-namespace Trabalho02
+﻿namespace Trabalho02
 {
     partial class Form1
     {
@@ -52,7 +51,7 @@ namespace Trabalho02
             this.lblValorPonto.AutoSize = true;
             this.lblValorPonto.Location = new System.Drawing.Point(640, 80);
             this.lblValorPonto.Name = "lblValorPonto";
-            this.lblValorPonto.Size = new System.Drawing.Size(36, 39);
+            this.lblValorPonto.Size = new System.Drawing.Size(47, 52);
             this.lblValorPonto.TabIndex = 29;
             this.lblValorPonto.Text = "0";
             // 
@@ -61,7 +60,7 @@ namespace Trabalho02
             this.lblPontuacao.AutoSize = true;
             this.lblPontuacao.Location = new System.Drawing.Point(411, 80);
             this.lblPontuacao.Name = "lblPontuacao";
-            this.lblPontuacao.Size = new System.Drawing.Size(192, 39);
+            this.lblPontuacao.Size = new System.Drawing.Size(242, 52);
             this.lblPontuacao.TabIndex = 28;
             this.lblPontuacao.Text = "Pontuação:";
             // 
@@ -79,7 +78,7 @@ namespace Trabalho02
             // 
             this.txtPalavra.Location = new System.Drawing.Point(79, 357);
             this.txtPalavra.Name = "txtPalavra";
-            this.txtPalavra.Size = new System.Drawing.Size(291, 47);
+            this.txtPalavra.Size = new System.Drawing.Size(291, 57);
             this.txtPalavra.TabIndex = 26;
             // 
             // lblc3
@@ -87,16 +86,16 @@ namespace Trabalho02
             this.lblc3.AutoSize = true;
             this.lblc3.Location = new System.Drawing.Point(298, 271);
             this.lblc3.Name = "lblc3";
-            this.lblc3.Size = new System.Drawing.Size(38, 39);
+            this.lblc3.Size = new System.Drawing.Size(50, 52);
             this.lblc3.TabIndex = 25;
             this.lblc3.Text = "Z";
             // 
             // lblc2
             // 
             this.lblc2.AutoSize = true;
-            this.lblc2.Location = new System.Drawing.Point(210, 271);
+            this.lblc2.Location = new System.Drawing.Point(202, 271);
             this.lblc2.Name = "lblc2";
-            this.lblc2.Size = new System.Drawing.Size(38, 39);
+            this.lblc2.Size = new System.Drawing.Size(50, 52);
             this.lblc2.TabIndex = 24;
             this.lblc2.Text = "Z";
             // 
@@ -105,55 +104,54 @@ namespace Trabalho02
             this.lblc1.AutoSize = true;
             this.lblc1.Location = new System.Drawing.Point(109, 271);
             this.lblc1.Name = "lblc1";
-            this.lblc1.Size = new System.Drawing.Size(38, 39);
+            this.lblc1.Size = new System.Drawing.Size(50, 52);
             this.lblc1.TabIndex = 23;
             this.lblc1.Text = "Z";
             // 
             // lblb3
             // 
             this.lblb3.AutoSize = true;
-            this.lblb3.Location = new System.Drawing.Point(298, 192);
+            this.lblb3.Location = new System.Drawing.Point(298, 182);
             this.lblb3.Name = "lblb3";
-            this.lblb3.Size = new System.Drawing.Size(38, 39);
+            this.lblb3.Size = new System.Drawing.Size(50, 52);
             this.lblb3.TabIndex = 22;
             this.lblb3.Text = "Z";
             // 
             // lblb2
             // 
             this.lblb2.AutoSize = true;
-            this.lblb2.Location = new System.Drawing.Point(210, 192);
+            this.lblb2.Location = new System.Drawing.Point(202, 182);
             this.lblb2.Name = "lblb2";
-            this.lblb2.Size = new System.Drawing.Size(38, 39);
+            this.lblb2.Size = new System.Drawing.Size(50, 52);
             this.lblb2.TabIndex = 21;
             this.lblb2.Text = "Z";
             // 
             // lblb1
             // 
             this.lblb1.AutoSize = true;
-            this.lblb1.Location = new System.Drawing.Point(109, 192);
+            this.lblb1.Location = new System.Drawing.Point(109, 182);
             this.lblb1.Name = "lblb1";
-            this.lblb1.Size = new System.Drawing.Size(38, 39);
+            this.lblb1.Size = new System.Drawing.Size(50, 52);
             this.lblb1.TabIndex = 20;
             this.lblb1.Text = "Z";
             // 
             // lbla3
             // 
             this.lbla3.AutoSize = true;
-            this.lbla3.Location = new System.Drawing.Point(298, 105);
+            this.lbla3.Location = new System.Drawing.Point(298, 96);
             this.lbla3.Name = "lbla3";
-            this.lbla3.Size = new System.Drawing.Size(38, 39);
+            this.lbla3.Size = new System.Drawing.Size(50, 52);
             this.lbla3.TabIndex = 19;
             this.lbla3.Text = "Z";
             // 
             // lbla2
             // 
             this.lbla2.AutoSize = true;
-            this.lbla2.Location = new System.Drawing.Point(210, 105);
+            this.lbla2.Location = new System.Drawing.Point(202, 96);
             this.lbla2.Name = "lbla2";
-            this.lbla2.Size = new System.Drawing.Size(38, 39);
+            this.lbla2.Size = new System.Drawing.Size(50, 52);
             this.lbla2.TabIndex = 18;
             this.lbla2.Text = "Z";
-           
             // 
             // btnGerarNovamente
             // 
@@ -168,9 +166,9 @@ namespace Trabalho02
             // lbla1
             // 
             this.lbla1.AutoSize = true;
-            this.lbla1.Location = new System.Drawing.Point(109, 105);
+            this.lbla1.Location = new System.Drawing.Point(109, 96);
             this.lbla1.Name = "lbla1";
-            this.lbla1.Size = new System.Drawing.Size(38, 39);
+            this.lbla1.Size = new System.Drawing.Size(50, 52);
             this.lbla1.TabIndex = 16;
             this.lbla1.Text = "Z";
             // 
@@ -186,7 +184,7 @@ namespace Trabalho02
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 39F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(25F, 51F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 561);
             this.Controls.Add(this.lblValorPonto);
@@ -231,6 +229,6 @@ namespace Trabalho02
         private System.Windows.Forms.Button btnGerarNovamente;
         private System.Windows.Forms.Label lbla1;
         private System.Windows.Forms.PictureBox pictureBox2;
+
     }
 }
-
