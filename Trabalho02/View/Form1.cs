@@ -86,7 +86,7 @@ namespace Trabalho02
 
                     while (encontrou)
                     {
-
+                        
 
                         charr.Add(separacao);
                         posicaoletra++;
