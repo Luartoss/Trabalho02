@@ -24,7 +24,7 @@ namespace Trabalho02
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            MostraLetra();
+            matriz = MostraLetra();
 
 
 
@@ -50,7 +50,10 @@ namespace Trabalho02
         }
         private void btnGerarNovamente_Click(object sender, EventArgs e)
         {
-            MostraLetra();
+            lblValorPonto.Text = "0";
+            txtPalavra.Text = null;
+            matriz = Model.Model.GeraMatriz();
+            matriz = MostraLetra();
 
         }
 
@@ -72,6 +75,7 @@ namespace Trabalho02
                 {
 
                     posicaoletra++;
+
                     separacao = Control.Control.Separa(letra, posicaoletra);
                     encontrou = Control.Control.Verifica(i, j, separacao, matriz, out i, out j);
 
